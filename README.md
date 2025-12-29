@@ -2,7 +2,7 @@
 
 A real-time posture monitoring application for macOS that uses AI-powered pose detection to help you maintain good posture while working. When you slouch, the screen blurs to remind you to sit up straight.
 
-![PostureFocus Demo](https://img.shields.io/badge/Platform-macOS-blue) ![Python](https://img.shields.io/badge/Python-3.8+-green)
+![PostureFocus Demo](https://img.shields.io/badge/Platform-macOS-blue) ![Python](https://img.shields.io/badge/Python-3.13+-green)
 
 ## Features
 
