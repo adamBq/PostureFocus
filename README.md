@@ -26,7 +26,7 @@ A real-time posture monitoring application for macOS that uses AI-powered pose d
 ## Requirements
 
 - **macOS** (tested on Apple Silicon, should work on Intel Macs)
-- **Python 3.13+**
+- **Python 3.13+** (Click [here](https://www.python.org/ftp/python/3.14.2/python-3.14.2-macos11.pkg) to install Python 3.14.2 on macOS)
 - **Webcam** (built-in or external)
 
 ## Installation
@@ -34,8 +34,8 @@ A real-time posture monitoring application for macOS that uses AI-powered pose d
 ### 1. Clone or Download
 
 ```bash
-git clone <your-repo-url>
-cd posture-focus
+git clone git@github.com:adamBq/PostureFocus.git
+cd PostureFocus
 ```
 
 ### 2. Create Virtual Environment (Recommended)
