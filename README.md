@@ -16,7 +16,7 @@ A real-time posture monitoring application for macOS that uses AI-powered pose d
 ## How It Works
 
 1. The app uses your webcam to track key body landmarks (nose, shoulders)
-2. You calibrate by sitting in your ideal posture
+2. You calibrate by sitting in your ideal posture (NOTE: The camera must be infront of you, not diagonal)
 3. The app continuously monitors three metrics:
    - **Neck distance** (3D) - detects forward head posture
    - **Neck vertical distance** (2D) - detects head dropping
@@ -26,7 +26,7 @@ A real-time posture monitoring application for macOS that uses AI-powered pose d
 ## Requirements
 
 - **macOS** (tested on Apple Silicon, should work on Intel Macs)
-- **Python 3.8+**
+- **Python 3.13+**
 - **Webcam** (built-in or external)
 
 ## Installation
@@ -51,20 +51,6 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-**requirements.txt:**
-```
-PyQt6>=6.4.0
-opencv-python>=4.8.0
-mediapipe>=0.10.0
-numpy>=1.24.0
-pyobjc-framework-Cocoa>=9.0
-```
-
-Or install manually:
-```bash
-pip install PyQt6 opencv-python mediapipe numpy pyobjc-framework-Cocoa
-```
-
 ### 4. Grant Camera Permissions
 
 When you first run the app, macOS will ask for camera permissions. Click **Allow**.
@@ -78,7 +64,7 @@ If you accidentally denied it:
 ### Running the App
 
 ```bash
-python main.py
+python3 main.py
 ```
 
 ### Setup Steps
@@ -168,12 +154,6 @@ pip install pyobjc-framework-Cocoa
 - **OpenCV**: Computer vision library for camera capture
 - **macOS Cocoa**: Native window management for always-on-top behavior
 
-### Performance
-
-- **CPU Usage**: ~10-15% on Apple M4 (varies by model complexity)
-- **Memory**: ~200-300 MB
-- **Latency**: <100ms from posture change to overlay response
-
 ## Known Limitations
 
 - **macOS only** - Uses Cocoa framework for window management
@@ -183,12 +163,7 @@ pip install pyobjc-framework-Cocoa
 
 ## Future Enhancements
 
-- [ ] Sound notifications option
-- [ ] Posture statistics and history tracking
-- [ ] Customizable overlay colors and opacity
-- [ ] Break reminders
-- [ ] Export posture data
-- [ ] Windows/Linux support
+- [ ] Work with camera in diagonal position
 
 ## Contributing
 
